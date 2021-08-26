@@ -7,8 +7,6 @@ import googleIconImg from '../assets/images/google-icon.svg'
 import { Button } from '../components/Button'
 
 import '../styles/auth.scss'
-import { useContext } from 'react'
-import { AuthContext } from '../contexts/AuthContext'
 import { useAuth } from '../hooks/useAuth'
 
 
@@ -21,9 +19,8 @@ export function Home() {
             await signInWithGoogle()
         }
 
-        history.push('/rooms/new')
+        // history.push('/rooms/new')
     }
-
 
     return (
         <div id="page-auth">
