@@ -19,7 +19,7 @@ export function Home() {
             await signInWithGoogle()
         }
 
-        // history.push('/rooms/new')
+        history.push('/rooms/new')
     }
 
     return (
